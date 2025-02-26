@@ -7,7 +7,7 @@ const Layout = () => {
   return (
     <div className='bg-white text-black dark:bg-black py-5'>
         <Header/>
-        <main className='mb-56 min-h-screen bg-white text-black dark:bg-black py-5'>
+        <main className='mb-56 bg-white text-black dark:bg-black py-5'>
             <Outlet/>
         </main>
         <Footer/>
