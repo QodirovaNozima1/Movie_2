@@ -1,0 +1,11 @@
+.swiper{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.swiper-button-prev::after{
+    color:transparent;
+}
+
+.swiper-button-next::after{
+    color:transparent;
+}

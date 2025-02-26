@@ -1,0 +1,23 @@
+@import "tailwindcss";
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#admin-sidebar .active{
+    background: dodgerblue;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+#group-tab .active{
+    color: dodgerblue ;
+    text-decoration: underline;
+}
+.container{
+  max-width:1248px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+  }
+ 

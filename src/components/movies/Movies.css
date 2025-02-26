@@ -1,0 +1,13 @@
+.movie__wrapper{
+    padding: 4px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 17px;
+    margin-bottom: 30px;
+}
+@media(max-width:660px){
+    .movie__wrapper{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+}
