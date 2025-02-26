@@ -24,7 +24,7 @@ const Search = () => {
   );
 
   return (
-    <div className="container search">
+    <div className="container  search">
       <div className="bar">
         <Search
           placeholder="movie name"
