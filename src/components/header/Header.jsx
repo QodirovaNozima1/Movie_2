@@ -50,7 +50,7 @@ useLayoutEffect(() => {
     <header id='header' className={`header h-[70px]  flex gap-5 p-5 items-center${bg}`}>
       <div className='container  justify-between items-center'>
         <nav className="navbar bg-inherit py-5 flex items-center justify-between">
-          <div className="flex gap-1 items-center navbar__img justify-center">
+          <div className="navbar__img">
             <div>
               <Link to={"/"}>
                 <img src={navlogo1} alt="" />
@@ -96,7 +96,7 @@ useLayoutEffect(() => {
               <option value="English">English</option>
               <option value="Uzb">Uzb</option>
             </select>
-            <div className='flex items-center gap-5'>                        
+            <div className='flex items-center gap-5 switch'>                        
               <Segmented defaultValue={localStorage.getItem("theme") == 'dark' ? 'dark' : 'light'} onChange={(value) => handleDarkMode(value)} size={'medium'} shape="round" options={[ { value: 'light', icon: <SunOutlined /> }, { value: 'dark', icon: <MoonOutlined /> }, ]} />
                     </div>
           </div>
