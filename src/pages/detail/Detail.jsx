@@ -10,7 +10,7 @@ const Detail = () => {
   return (
     <div className='container flex flex-col p-2 mb-10 gap-10'>
         <div>
-            <h1 className='text-3xl text-white italic'>{data?.title}</h1>
+            <h1 className='text-3xl font-bold text-slate-600 italic'>{data?.title}</h1>
         </div>
         <div className='sm:w-[170]'>
             <img className='sm:w-[180]' src={import.meta.env.VITE_IMAGE_URL + data?.backdrop_path} alt="" />
