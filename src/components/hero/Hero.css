@@ -1,3 +1,4 @@
+
 .mySwiper2 {
     width: 100%;
   }
@@ -46,6 +47,7 @@
   .mySwiper .swiper-slide {
     max-width: 108px;
     opacity: 0.4;
+    margin-bottom: 60px;
   }
   
   .mySwiper .swiper-slide-thumb-active {

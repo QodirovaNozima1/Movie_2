@@ -20,7 +20,7 @@ const Hero = () => {
 
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
-    <>
+    <div>
         <Swiper
         style={{
           '--swiper-navigation-color': '#fff',
@@ -33,10 +33,11 @@ const Hero = () => {
         thumbs={{ swiper: thumbsSwiper }}
         modules={[FreeMode, Navigation, Thumbs]}
         className="mySwiper2"
-      >
-        {
+      > 
+      <div className="w-full  dark:bg-black dark:text-white">
+      {
             data?.results?.map(movie => (
-                <SwiperSlide key={movie.id}>
+                <SwiperSlide key={movie.id} className='w-full'>
                     <img src={imageUrl + movie.backdrop_path} alt="" />
                     <div className='absolute bottom-6 left-[50%] translate-x-[-50%] flex flex-col items-center gap-4 text-white '>
                         <h2 className=' text-[32px] leading-[40px] font-medium tracking-[1%] '>{movie.title}</h2>
@@ -53,6 +54,8 @@ const Hero = () => {
                 </SwiperSlide>
             ))
         }
+      </div>
+        
       </Swiper>
       <div className='max-w-[500px] mx-auto clips'>
       <Swiper
@@ -74,7 +77,7 @@ const Hero = () => {
         }
       </Swiper>
       </div>
-    </>
+    </div>
   )
 }
 

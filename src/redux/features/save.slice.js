@@ -4,7 +4,7 @@ const initialState = {
   value: JSON.parse(localStorage.getItem("saved")) || [],
 }
 
-export const CardSlice = createSlice({
+export const SaveSlice = createSlice({
   name: 'saved',
   initialState,
   reducers: {
@@ -20,6 +20,6 @@ export const CardSlice = createSlice({
   },
 })
 
-export const { toggleSave } = CardSlice.actions
+export const { toggleSave } = SaveSlice.actions
 
-export default CardSlice.reducer
+export default SaveSlice.reducer

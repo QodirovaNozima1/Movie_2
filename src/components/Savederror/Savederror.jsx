@@ -1,7 +1,7 @@
 import React from 'react'
 import error from '../../assets/heart.png'
 
-const Carderror = () => {
+const Savederror = () => {
   return (
     <div className='flex flex-col items-center min-h-[400px] pt-32'>
         <img className='w-[200px]' src={error} alt="" />
@@ -10,4 +10,4 @@ const Carderror = () => {
   )
 }
 
-export default Carderror
+export default Savederror
