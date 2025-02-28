@@ -34,9 +34,16 @@ const extendedApi = mainApi.injectEndpoints({
         params,
       }),
     }),
+    getTopRatedMovies: build.query({
+      query: (params) => ({
+          url: '/movie/top_rated',
+          method: 'GET',
+          params
+      })
+  })
     
   }),
   overrideExisting: false,
 })
 
-export const { useGetMoviesQuery, useGetSingleMovieQuery, useGetSingleMovieImagesQuery, useGetGenresQuery,useGetSearchQuery } = extendedApi
+export const { useGetMoviesQuery, useGetSingleMovieQuery, useGetSingleMovieImagesQuery, useGetGenresQuery,useGetSearchQuery,useGetTopRatedMoviesQuery } = extendedApi
