@@ -29,12 +29,15 @@ const Movies = ({data}) => {
               onClick={() => handleToggleSave(movie)}
             />
           )}
-          <Link to={`/movie/${movie.id}`} className='h-[370px] block bg-gray-400 rounded-[10px]'>
+          <Link to={`/movie/${movie.id}`} className='h-[370px] block bg-gray-400 rounded-[10px] mb-1.5'>
             <img className='w-full h-full object-cover rounded-[10px]' src={import.meta.env.VITE_IMAGE_URL + movie.poster_path} alt="" />
           </Link>
-          <div className='p-1.5'>
-            <h3 title={movie.title} className='text-2xl text-slate-600  font-medium line-clamp-1'>{movie.title}</h3>
-            <p className='text-yellow-500 font-medium'>{movie.vote_average}</p>
+          <div className='p-1.5 flex flex-col gap-5'>
+            <h3 title={movie.title} className='text-2xl dark:text-white light:text-black  font-medium line-clamp-1 italic'>{movie.title}</h3>
+            <div className="flex justify-between py-5">
+            <p className='text-yellow-300 font-medium'>Rating:   {movie.vote_average}</p>
+            <p className='dark:text-white light:text-black text-[14px]'>Watch now</p>
+            </div>
           </div>
         </div>
       ))

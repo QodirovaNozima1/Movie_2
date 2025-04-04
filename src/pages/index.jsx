@@ -10,7 +10,7 @@ const Search = lazy(()=> import("../pages/search/Search"))
 
 const RouterMain = () => {
   return (
-    <div className='bg-black'>
+    <div className='bg-black  '>
           <Routes>
         <Route path='/' element={<SuspenseContainer><Layout/></SuspenseContainer>}>
             <Route path='/' element={<SuspenseContainer><Home/></SuspenseContainer>}/>

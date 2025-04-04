@@ -89,6 +89,7 @@ const Cinema = () => {
           total={Math.min(data?.total_pages || 1, 500) * 10}
           showSizeChanger={false}
           size="large"
+          style={{background:"transparent"}}
           onChange={handleChangePage}
         />
       </div>
